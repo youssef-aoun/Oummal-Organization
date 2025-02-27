@@ -1,38 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Contact Us</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/oummal-logo" href="images/oummal-logo-only.png">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* 🌙 Dark Theme Contact Section */
+    .contact-section {
+      background: #121212;
+      /* Dark background */
+      padding: 80px 0;
+      text-align: center;
+      color: white;
+    }
+
+    /* ✨ Section Title */
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #259F83;
+      /* Orange Title */
+      letter-spacing: 1px;
+    }
+
+    .sub-text {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    /* 🎭 Contact Boxes */
+    .contact-box {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px #72F5A0;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid #3ABF92;
+      /* Orange Border */
+      min-height: 180px;
+      /* Ensures all boxes have the same height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* 🚀 Hover Effect */
+    .contact-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px #56DA97;
+    }
+
+    /* 📝 Text */
+    .contact-box h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 16px;
+      margin: 0;
+      flex-grow: 1;
+      /* Pushes content to align properly */
+    }
+
+    /* 🔗 Links */
+    .contact-box p a {
+      text-decoration: none;
+      color: #7cbd1e;
+      /* Orange Links */
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .contact-box p a:hover {
+      color: white;
+    }
+
+    /* 🔥 Fade-in Animation */
+    .contact-box {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease-in-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 📱 Responsive Design */
+    @media (max-width: 768px) {
+      .contact-box {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Oummal</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/oummal-logo.png" alt="Oummal Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
@@ -47,104 +155,102 @@
       </div>
     </div>
   </nav>
-    <!-- END nav -->
-    
-    <div class="hero-wrap" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-             <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Contact Us</h1>
+  <!-- END nav -->
+
+  <!-- Contact Section -->
+  <section class="ftco-section contact-section">
+    <div class="container">
+      <div class="row d-flex mb-5 contact-info">
+        <div class="col-md-12 mb-4 text-center">
+          <br>
+          <br>
+          <h2 class="h4 section-title">📍 Get in Touch</h2>
+          <p class="sub-text">We're here to help! Reach out anytime.</p>
+        </div>
+        <div class="w-100"></div>
+
+        <div class="col-md-4">
+          <div class="contact-box">
+            <h4>Visit Us</h4>
+            <p>
+              <a href="https://goo.gl/maps/vZHy17P346apmf2S8" target="_blank">
+                Zgharta, Main Road, AL Makhada, Father Semaan Douaihy ST., Sassine Akleh Building, 1st Floor.
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-box">
+            <h4>Call Us</h4>
+            <p><a href="tel:+9616669289">+961 6 669 289</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-box">
+            <h4>Email Us</h4>
+            <p><a href="mailto:info@oummal.org">info@oummal.org</a></p>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    
-    <section class="ftco-section contact-section ftco-degree-bg">
-      <div class="container">
-        <div class="row d-flex mb-5 contact-info">
-          <div class="col-md-12 mb-4">
-            <h2 class="h4">Contact Information</h2>
+
+
+
+
+  <footer class="ftco-footer ftco-section img">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-8">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">About Us</h2>
+            <p>Oummal is the reflection of a vision driven by a sense of justice and equity. Our vision is to empower
+              people to take
+              ownership of their rights through a bottom-up approach. Since our registration in 2013, Oummal has been
+              dedicated to
+              advancing the rights and well-being of all beings, human and animal alike.</p>
+
           </div>
-          <div class="w-100"></div>
-          <div class="col-md-3">
-            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+        </div>
+        <div class="col-md-4">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+            <h2 class="ftco-heading-2">Site Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="py-2 d-block">Home</a></li>
+              <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+              <li><a href="programs.html" class="py-2 d-block">Programs</a></li>
+              <li><a href="news.html" class="py-2 d-block">Circulars and News</a></li>
+              <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+            </ul>
           </div>
-          <div class="col-md-3">
-            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-          </div>
-          <div class="col-md-3">
-            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-          </div>
-          <div class="col-md-3">
-            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer class="ftco-footer ftco-section img">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-6">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About Us</h2>
-              <p>Oummal is the reflection of a vision driven by a sense of justice and equity. Our vision is to empower
-                people to take
-                ownership of their rights through a bottom-up approach. Since our registration in 2013, Oummal has been
-                dedicated to
-                advancing the rights and well-being of all beings, human and animal alike.</p>
-    
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Site Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="index.html" class="py-2 d-block">Home</a></li>
-                <li><a href="about.html" class="py-2 d-block">About Us</a></li>
-                <li><a href="programs.html" class="py-2 d-block">Programs</a></li>
-                <li><a href="news.html" class="py-2 d-block">Circulars and News</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have a Question?</h2>
-              <div class="block-23 mb-3">
-                <ul>
-                  <li><a href="https://goo.gl/maps/vZHy17P346apmf2S8" target="_blank"><span
-                        class="icon icon-map-marker"></span><span class="text">ZGHARTA, MAIN ROAD, AL MAKHADA, FATHER SEMAAN
-                        DOUAIHY ST., SASSINE AKLEH BUILDING, 1ST FLOOR.</span></a></li>
-                  <li><a><span class="icon icon-phone"></span><span class="text">+961 6 669 289</span></a></li>
-                  <li><a href="mailto:info@oummal.org"><span class="icon icon-envelope"></span><span
-                        class="text">info@oummal.org</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-    
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  
+
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -161,9 +267,11 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
-  </body>
+
+</body>
+
 </html>
