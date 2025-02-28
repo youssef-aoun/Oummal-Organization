@@ -112,7 +112,7 @@ h3 {
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="../index.html">
         <img src="../images/oummal-logo.png" alt="Oummal Logo" class="logo-img">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -622,18 +622,19 @@ h3 {
     const buttons = document.querySelectorAll('.toggle-btn');
 
     buttons.forEach(button => {
-        button.innerHTML = "▶"; // Default arrow right
-        const h2 = button.parentElement; // Get the h2 element
+        button.innerHTML = "&#9654;"; // Unicode for ▶
+        const h2 = button.parentElement;
 
         h2.addEventListener('click', function () {
-          const content = h2.nextElementSibling; // Get the corresponding content div
+          const content = h2.nextElementSibling;
           const isExpanded = content.style.display === "block";
 
-          content.style.display = isExpanded ? "none" : "block"; // Toggle content
-          button.innerHTML = isExpanded ? "▶" : "▼"; // Toggle arrow
+          content.style.display = isExpanded ? "none" : "block";
+          button.innerHTML = isExpanded ? "&#9654;" : "&#9660;"; // Unicode for ▼
           button.classList.toggle("expanded", !isExpanded);
         });
       });
+
 
 
 
